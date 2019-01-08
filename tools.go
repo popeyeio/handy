@@ -23,10 +23,10 @@ func Choose(weights []uint32) (index int, ok bool) {
 
 	n := fastrand.Uint32n(total) + 1
 	for i, w := range weights {
-		n -= w
-		if n <= 0 {
+		if n <= w {
 			return i, true
 		}
+		n -= w
 	}
 	return
 }
