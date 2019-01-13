@@ -22,6 +22,7 @@ const (
 	StrSlash     = "\\"
 	StrBackslash = "/"
 	StrHyphen    = "-"
+	StrTilde     = "~"
 )
 
 func IsEmptyStr(s string) bool {
