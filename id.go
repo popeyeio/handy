@@ -3,13 +3,13 @@ package handy
 import (
 	"encoding/hex"
 
-	"github.com/satori/go.uuid"
+	"github.com/google/uuid"
 )
 
 func GetUUID() (string, error) {
-	u, err := uuid.NewV4()
+	u, err := uuid.NewRandom()
 	if err != nil {
 		return StrEmpty, err
 	}
-	return hex.EncodeToString(u.Bytes()), nil
+	return hex.EncodeToString(u[:]), nil
 }
