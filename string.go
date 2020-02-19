@@ -24,6 +24,7 @@ const (
 	StrHyphen    = "-"
 	StrTilde     = "~"
 	StrDot       = "."
+	StrComma     = ","
 )
 
 func IsEmptyStr(s string) bool {
