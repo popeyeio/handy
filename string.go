@@ -25,6 +25,7 @@ const (
 	StrTilde     = "~"
 	StrDot       = "."
 	StrComma     = ","
+	StrSemicolon = ";"
 )
 
 func IsEmptyStr(s string) bool {
